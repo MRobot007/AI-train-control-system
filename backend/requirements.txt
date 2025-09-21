@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pandas==2.2.2
+numpy==2.1.1
+python-multipart==0.0.9
+scikit-learn==1.5.2
+simpy==4.1.1
+ortools==9.10.4067
+SQLAlchemy==2.0.34
+sqlmodel==0.0.22
+httpx==0.27.2

@@ -1,0 +1,2 @@
+"# rail-management"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/MRobot007/rail-management.gitgit push -u origin main
+"# Developing-an-AI-train-traffic-control-system"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/MRobot007/Developing-an-AI-train-traffic-control-system.gitgit push -u origin main

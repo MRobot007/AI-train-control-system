@@ -1,0 +1,7 @@
+train_id,type,priority,max_speed_kmph
+T001,express,1,130
+T002,express,2,120
+T003,passenger,3,100
+T004,passenger,3,95
+T005,freight,4,80
+T006,freight,4,75

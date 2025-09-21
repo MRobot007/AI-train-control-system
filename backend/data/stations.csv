@@ -1,0 +1,3 @@
+station_id,name,num_platforms,avg_dwell_min
+MSH,Mehsana Junction,4,3
+BRC,Vadodara Junction,6,4

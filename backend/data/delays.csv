@@ -1,0 +1,4 @@
+train_id,station_id,delay_min,date
+T001,STA,5,2025-09-10
+T002,STA,2,2025-09-11
+T003,STB,12,2025-09-12

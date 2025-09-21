@@ -1,0 +1,13 @@
+@echo off
+echo Adding all files to git...
+git add .
+echo Committing changes...
+git commit -m "Enhanced railway traffic control system with zoom functionality and real railway data"
+echo Setting up remote repository...
+git remote remove origin
+git remote add origin https://github.com/MRobot007/rail-management.git
+echo Pushing to GitHub...
+git push -u origin main
+echo Done!
+pause
+
