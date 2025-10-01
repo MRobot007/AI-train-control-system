@@ -801,11 +801,12 @@ class AIService {
   }
 
   // Get detailed model information
-  getModelInfo(): { models: MLModel[], ensembleWeights: Record<string, number>, featureImportance: Record<string, number> } {
+  getModelInfo(): { models: MLModel[], ensembleWeights: Record<string, number>, featureImportance: Record<string, number>, trainingStatus: boolean } {
     return {
       models: Array.from(this.models.values()),
       ensembleWeights: this.ensembleWeights,
-      featureImportance: this.featureImportance
+      featureImportance: this.featureImportance,
+      trainingStatus: this.isTraining
     };
   }
 
@@ -963,24 +964,8 @@ class AIService {
     return apiSimulate(payload);
   }
 
-  // Auto-learning from real-time data
-  async updateModel(newData: any[]): Promise<void> {
-    if (this.isTraining) return;
-    
-    this.trainingData.push(...newData);
-    
-    // Retrain periodically with new data
-    if (this.trainingData.length > 1000) {
-      await this.trainModel(this.trainingData.slice(-500)); // Keep recent data
-    }
-  }
-
   isModelTraining(): boolean {
     return this.isTraining;
-  }
-
-  getModelInfo(): any {
-    return this.model;
   }
 }
 
